@@ -1,6 +1,14 @@
 import { Project, Testimonial, ServiceItem, ProcessStep } from './types';
 
-
+/**
+ * BILDVERWALTUNG
+ * Alle Galerie-Bilder befinden sich im Ordner `gallery/` im Projekt-Root.
+ * Um Bilder zu aktualisieren:
+ * 1. Ersetze oder füge neue JPG-Dateien in gallery/ hinzu (z.B. gallery/tisch-1.jpg)
+ * 2. Aktualisiere die imageUrl-Pfade unten (z.B. 'gallery/mein-bild.jpg')
+ *
+ * Die Bilder werden automatisch im Browser geladen und sind Teil des lokalen Projekts.
+ */
 
 export const GALLERY_ITEMS: Project[] = [
   {
@@ -9,27 +17,24 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Tische',
     description: 'Ein robuster Esstisch aus wilder Eiche mit Baumkante, geölt für Langlebigkeit.',
     fullDescription: 'Dieser Tisch bildet das Herzstück des Esszimmers. Gefertigt aus 300 Jahre alter Eiche, bewahrt er die Geschichte des Baumes. Die Oberfläche wurde dreifach mit Hartwachsöl behandelt.',
-    imageUrl: 'https://images.pexels.com/photos/890669/pexels-photo-890669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    // TODO: eigenes Bild: imageUrl: '/gallery/tisch-eiche.jpg'
+    imageUrl: 'gallery/tisch-1.jpg',
     tags: ['Eiche', 'Baumkante', 'Geölt', 'Stahlgestell'],
   },
   {
-  id: '2',
-  title: 'Schwebendes Bett "Traumfänger"',
-  category: 'Betten',
-  description: 'Zirbenholzbett mit unsichtbarer Unterkonstruktion und integrierten Nachttischen.',
-  fullDescription: 'Das Zirbenholz verströmt einen beruhigenden Duft, der den Schlaf fördert. Die schwebende Optik lässt das massive Möbelstück leicht und modern wirken.',
-  imageUrl: 'https://drive.usercontent.google.com/download?id=15iV38nsdalGLHbm24xWM40nWfMxEiiuZ&export=view&authuser=0',
-  // TODO: eigenes Bild: imageUrl: '/gallery/bett-zirbe.jpg'
-  tags: ['Zirbe', 'Metallfrei', 'Modern'],
-},
+    id: '2',
+    title: 'Schwebendes Bett "Traumfänger"',
+    category: 'Betten',
+    description: 'Zirbenholzbett mit unsichtbarer Unterkonstruktion und integrierten Nachttischen.',
+    fullDescription: 'Das Zirbenholz verströmt einen beruhigenden Duft, der den Schlaf fördert. Die schwebende Optik lässt das massive Möbelstück leicht und modern wirken.',
+    imageUrl: 'gallery/bett-1.jpg',
+    tags: ['Zirbe', 'Metallfrei', 'Modern'],
+  },
   {
     id: '3',
     title: 'Landhausküche "Dresdner Elbe"',
     category: 'Küchen',
     description: 'Vollmassive Küche aus Ahorn und Nussbaum, angepasst an schräge Wände.',
-    imageUrl: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    // TODO: eigenes Bild: imageUrl: '/gallery/kueche-ahorn.jpg'
+    imageUrl: 'gallery/kueche-1.jpg',
     tags: ['Ahorn', 'Nussbaum', 'Maßanfertigung'],
   },
   {
@@ -37,8 +42,7 @@ export const GALLERY_ITEMS: Project[] = [
     title: 'Bibliotheksregal mit Leiter',
     category: 'Schränke & Regale',
     description: 'Raumhohes Bücherregal aus weiß gekalkter Esche inklusive verschiebbarer Leiter.',
-    imageUrl: 'https://images.pexels.com/photos/4846461/pexels-photo-4846461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    // TODO: eigenes Bild: imageUrl: '/gallery/regal-esche.jpg'
+    imageUrl: 'gallery/regal-1.jpg',
     tags: ['Esche', 'Weißöl', 'Bibliothek'],
   },
   {
@@ -46,8 +50,7 @@ export const GALLERY_ITEMS: Project[] = [
     title: 'Gartentisch "Sommernacht"',
     category: 'Außenbereich',
     description: 'Wetterfester Teak-Tisch für die große Terrasse, Platz für 12 Personen.',
-    imageUrl: 'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    // TODO: eigenes Bild: imageUrl: '/gallery/garten-teak.jpg'
+    imageUrl: 'gallery/garten-1.jpg',
     tags: ['Teak', 'Outdoor', 'Wetterfest'],
   },
   {
@@ -55,8 +58,7 @@ export const GALLERY_ITEMS: Project[] = [
     title: 'Sideboard "Mid-Century Modern"',
     category: 'Schränke & Regale',
     description: 'Elegantes Sideboard aus Kirschbaum mit klassischen Linien und viel Stauraum.',
-    imageUrl: 'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    // TODO: eigenes Bild: imageUrl: '/gallery/sideboard-kirsche.jpg'
+    imageUrl: 'gallery/tisch-2.jpg',
     tags: ['Kirschbaum', 'Retro', 'Wohnzimmer'],
   }
 ];

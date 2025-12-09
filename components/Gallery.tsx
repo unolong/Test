@@ -3,6 +3,11 @@ import { X } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data';
 import { Category, Project } from '../types';
 
+/**
+ * Bilder werden aus dem gallery/-Ordner geladen.
+ * Pfade werden von data.ts bereitgestellt (relative Pfade, z.B. 'gallery/tisch-1.jpg')
+ */
+
 const CATEGORIES: Category[] = ['Alle', 'Tische', 'Schränke & Regale', 'Betten', 'Küchen', 'Außenbereich'];
 
 const Gallery: React.FC = () => {
@@ -55,7 +60,6 @@ const Gallery: React.FC = () => {
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
                   loading="lazy"
                 />
-                {/* TODO: Image replacement via data.ts */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
               </div>
               <div className="pt-4 flex-1 flex flex-col">
