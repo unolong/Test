@@ -29,7 +29,8 @@ const About: React.FC = () => {
             </h2>
             <div className="space-y-4 text-stone-600 text-lg leading-relaxed">
               <p>
-                Willkommen im Tischleratelier Sinnesmagnet. Mein Name ist Till Epple, und Holz ist meine Leidenschaft. In meiner Werkstatt in Dresden entstehen Möbel, die mehr sind als nur Gebrauchsgegenstände.
+                Willkommen im Tischleratelier Sinnesmagnet. 
+                Mein Name ist Till Epple, und Holz ist meine Leidenschaft. In meiner Werkstatt in Dresden entstehen Möbel, die mehr sind als nur Gebrauchsgegenstände.
               </p>
               <p>
                 Wir glauben an die Kraft des Echten. Massives Holz, das atmet, duftet und mit den Jahren immer schöner wird. In einer schnelllebigen Welt setzen wir auf Beständigkeit und handwerkliche Präzision bis ins kleinste Detail.
