@@ -109,15 +109,15 @@ export const SERVICES: ServiceItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    name: 'Anna & Markus Weber',
-    text: 'Unser neuer Esstisch ist ein absoluter Traum. Die Beratung war herzlich und kompetent, und man spürt die Liebe zum Detail in jedem Zentimeter Holz.',
+    name: 'R.',
+    text: 'Wir haben ein kleines Einfamilienhaus saniert und hatten die wilde Idee, aus alten Balken und Dielen der vormaligen Küche (heute Bad) eine Küche bauen zu lassen. Herr Epple war die allerbeste Wahl für unser Projekt.',
     imageUrl: 'https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'
     // TODO: eigenes Bild: imageUrl: '/testimonials/kunde1.jpg'
   },
   {
     id: '2',
     name: 'Dr. Stefan Richter',
-    text: 'Für meine Praxis wollte ich einen Empfangstresen, der nicht steril wirkt. Das Ergebnis hat meine Erwartungen übertroffen. Handwerk auf höchstem Niveau.',
+    text: 'Klare Weiterempfehlung. Sowohl Beratung als auch Produkt extraklasse. Bei der Beratung hat uns insbesondere gefallen, dass Herr Epple sich super einbringt und Vorschläge unterbreitet, die aber stets an den eigenen Vorstellungen orientiert sind. Insgesamt eine äußerst angenehme und unkomplizierte Abwicklung. Vielen Dank!',
     imageUrl: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'
     // TODO: eigenes Bild: imageUrl: '/testimonials/kunde2.jpg'
   },
