@@ -66,16 +66,6 @@ export const GALLERY_ITEMS: Project[] = [
     tags: ['Apfelbaum', 'Couchtisch', 'Ablage'],
   }
 ];
- {
-    id: '7',
-    title: 'Wohnwand „Linienwerk“ aus Eiche',
-    category: 'Schränke & Regale',
-    description: 'Modulares Ensemble aus zwei hohen Regalen und einem breiten Lowboard mit Schubladen. Bietet viel Stauraum für Bücher, Geschirr oder Technik bei klarer, ruhiger Gestaltung.',
-    fullDescription: 'Linienwerk ist eine maßgefertigte Wohnwand aus massiver Eiche, die offene Regale und großzügige Schubkästen zu einem schlanken, wohnlichen Stauraumsystem verbindet.',
-    imageUrl: 'gallery/schrank-2.jpg',
-    tags: ['Wohnwand', 'Eiche', 'TV- & Stauraummöbel'],
-  }
-];
 
 export const SERVICES: ServiceItem[] = [
   {
