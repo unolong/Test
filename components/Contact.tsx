@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
                   <MapPin className="w-6 h-6 text-wood-400 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold text-white">Werkstatt & Büro</h3>
-                    <p className="text-stone-300">Industriestraße 15<br/>01099 Dresden</p>
+                    <p className="text-stone-300">Industriestraße 15<br/>01189 Dresden</p>
                   </div>
                 </div>
                 
