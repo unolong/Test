@@ -156,7 +156,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const IMAGES = {
   hero: 'https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
   // TODO: eigenes Bild: hero: '/hero/werkstatt-bg.jpg'
-  about: 'https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&dpr=1',
+  about: 'gallery/till.jpg',
   // TODO: eigenes Bild: about: '/team/meister.jpg'
   materials: 'https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   // TODO: eigenes Bild: materials: '/materials/holzstruktur.jpg'
