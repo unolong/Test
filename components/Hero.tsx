@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             die Ihre Sinne berühren.
           </h1>
           <p className="text-lg sm:text-xl text-stone-200 mb-8 leading-relaxed max-w-xl">
-        Ob Esstisch, Einbauschrank oder Hochbett: Im Tischleratelier Sinnesmagnet entstehen Massivholzmöbel ganz nach Ihren Vorstellungen. Aus regionalem Holz, sorgfältig geplant und mit handwerklicher Präzision gebaut – für Räume, in denen Sie sich wirklich zu Hause fühlen.
+            Wir fertigen Unikate mit Charakter. Nachhaltig, langlebig und exakt nach Ihren Vorstellungen geplant. Erleben Sie Holz in seiner schönsten Form.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
