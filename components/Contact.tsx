@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle, Loader2, MapPinIcon } from 'lucide-react';
 import { IMAGES } from '../data';
 
 const Contact: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
+  const mapsUrl =
+    'https://www.google.com/maps/dir/?api=1&destination=Am+Eiswurmlager+21,+01189+Dresden&travelmode=driving';
+
+  const handleOpenMap = () => {
+    window.open(mapsUrl, '_blank', 'noopener,noreferrer');
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulating network request
     setTimeout(() => {
       setIsSubmitting(false);
@@ -57,14 +64,29 @@ const Contact: React.FC = () => {
               </div>
             </div>
             
-            <div className="mt-12 relative z-10 h-48 rounded-xl overflow-hidden border border-stone-700">
-                <img 
-                    src={IMAGES.contact}
-                    alt="Karte Dresden Umgebung"
-                    className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
+            <button
+              onClick={handleOpenMap}
+              className="mt-12 relative z-10 w-full group cursor-pointer"
+              aria-label="Route in Google Maps planen"
+            >
+              <div className="relative h-56 md:h-64 rounded-xl overflow-hidden border border-stone-700 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src={IMAGES.contact}
+                  alt="Karte Dresden"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                 />
-                {/* TODO: Static Map Image replacement via data.ts */}
-            </div>
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <MapPinIcon className="w-8 h-8 text-wood-600" />
+                    </div>
+                    <span className="bg-white/90 text-stone-900 px-4 py-2 rounded-lg font-medium text-sm shadow-lg">
+                      Route planen
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </button>
 
             {/* Decor */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-wood-600 rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
