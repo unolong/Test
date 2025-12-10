@@ -109,14 +109,14 @@ export const SERVICES: ServiceItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    name: 'R.',
+    name: 'Familie R.',
     text: 'Wir haben ein kleines Einfamilienhaus saniert und hatten die wilde Idee, aus alten Balken und Dielen der vormaligen Küche (heute Bad) eine Küche bauen zu lassen. Herr Epple war die allerbeste Wahl für unser Projekt.',
     imageUrl: 'https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'
     // TODO: eigenes Bild: imageUrl: '/testimonials/kunde1.jpg'
   },
   {
     id: '2',
-    name: 'Dr. Stefan Richter',
+    name: 'Familie C.',
     text: 'Klare Weiterempfehlung. Sowohl Beratung als auch Produkt extraklasse. Bei der Beratung hat uns insbesondere gefallen, dass Herr Epple sich super einbringt und Vorschläge unterbreitet, die aber stets an den eigenen Vorstellungen orientiert sind. Insgesamt eine äußerst angenehme und unkomplizierte Abwicklung. Vielen Dank!',
     imageUrl: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'
     // TODO: eigenes Bild: imageUrl: '/testimonials/kunde2.jpg'
@@ -124,7 +124,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '3',
     name: 'Familie S.',
-    text: 'Das Hochbett für unsere Kinder ist super stabil und wunderschön verarbeitet. Endlich ein Möbelstück, das Generationen überdauern wird.',
+    text: 'Professionell, kreativ, mit viel Herzblut und Feinsinn!Herr Epple hat für und mit uns unsere besondere Küche geplant und gebaut. Wir hätten niemand besseren finden können, um die Planung auszuarbeiten und alles mit viel Liebe zum Detail herzustellen und zu montieren.',
     // Kein Bild hier, um Fallback-Design zu testen (Standard-Icon)
   }
 ];
