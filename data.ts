@@ -22,12 +22,12 @@ export const GALLERY_ITEMS: Project[] = [
   },
   {
     id: '2',
-    title: 'Schwebendes Bett "Traumfänger"',
+    title: 'Hochbett „Baumsteg"',
     category: 'Betten',
-    description: 'Zirbenholzbett mit unsichtbarer Unterkonstruktion und integrierten Nachttischen.',
-    fullDescription: 'Das Zirbenholz verströmt einen beruhigenden Duft, der den Schlaf fördert. Die schwebende Optik lässt das massive Möbelstück leicht und modern wirken.',
+    description: 'Schwebendes Hochbett aus Eiche mit naturbelassener Leiter aus Robinie und Stauraum im Bereich darunter.',
+    fullDescription: 'Baumsteg ist ein massiv gebautes Hochbett aus Eiche mit skulpturaler Robinienleiter, das den Raum darunter frei nutzbar macht und echtes Baumhaus-Gefühl ins Zimmer holt.',
     imageUrl: 'gallery/bett-1.jpg',
-    tags: ['Zirbe', 'Metallfrei', 'Modern'],
+    tags: ['Eiche', 'Robinie', 'Hochbett'],
   },
   {
     id: '3',
