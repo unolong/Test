@@ -47,7 +47,7 @@ export const GALLERY_ITEMS: Project[] = [
   },
   {
     id: '5',
-    title: 'Gartenbank „Rebenblick“ aus Esche"',
+    title: 'Gartenbank „Rebenblick“ aus Esche',
     category: 'Außenbereich',
     description: 'Zeitlose Gartenbank aus heller Esche mit ergonomischer Sitzfläche und klaren Linien – gemacht für lange Sommerabende im Grünen..',
     fullDescription: 'Rebenblick ist eine stabile Gartenbank aus massivem Eschenholz, die mit ihrer bequemen Form und warmen Ausstrahlung jeden Garten in einen Lieblingsplatz verwandelt.',
@@ -56,7 +56,7 @@ export const GALLERY_ITEMS: Project[] = [
   },
   {
     id: '6',
-    title: 'Couchtisch „Apfelkern“ mit Ablage"',
+    title: 'Couchtisch „Apfelkern“ mit Ablage',
     category: 'Tische',
     description: 'Kompakter Couchtisch aus lebendig gemasertem Apfelbaum mit seitlichen Fächern für Zeitungen und Bücher.',
     fullDescription: 'Apfelkern ist ein moderner Couchtisch aus massivem Apfelbaumholz mit markanter Streifenmaserung und integrierten Ablagen, der Ordnung schafft und gleichzeitig zum Blickfang im Wohnzimmer wird.',
