@@ -65,7 +65,7 @@ export const GALLERY_ITEMS: Project[] = [
     imageUrl: 'gallery/tisch-2.jpg',
     tags: ['Apfelbaum', 'Couchtisch', 'Ablage'],
   }
-];
+],
  {
     id: '7',
     title: 'Wohnwand „Linienwerk“ aus Eiche',
