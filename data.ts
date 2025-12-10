@@ -47,11 +47,12 @@ export const GALLERY_ITEMS: Project[] = [
   },
   {
     id: '5',
-    title: 'Gartentisch "Sommernacht"',
+    title: 'Gartenbank „Rebenblick“ aus Esche"',
     category: 'Außenbereich',
-    description: 'Wetterfester Teak-Tisch für die große Terrasse, Platz für 12 Personen.',
+    description: 'Zeitlose Gartenbank aus heller Esche mit ergonomischer Sitzfläche und klaren Linien – gemacht für lange Sommerabende im Grünen..',
+    fullDescription: 'Rebenblick ist eine stabile Gartenbank aus massivem Eschenholz, die mit ihrer bequemen Form und warmen Ausstrahlung jeden Garten in einen Lieblingsplatz verwandelt.',
     imageUrl: 'gallery/garten-1.jpg',
-    tags: ['Teak', 'Outdoor', 'Wetterfest'],
+    tags: ['Esche', 'Outdoor', 'Wetterfest'],
   },
   {
     id: '6',
