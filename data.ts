@@ -55,11 +55,12 @@ export const GALLERY_ITEMS: Project[] = [
   },
   {
     id: '6',
-    title: 'Sideboard "Mid-Century Modern"',
-    category: 'Schränke & Regale',
-    description: 'Elegantes Sideboard aus Kirschbaum mit klassischen Linien und viel Stauraum.',
+    title: 'Couchtisch „Apfelkern“ mit Ablage"',
+    category: 'Tische',
+    description: 'Kompakter Couchtisch aus lebendig gemasertem Apfelbaum mit seitlichen Fächern für Zeitungen und Bücher.',
+    fullDescription: 'Apfelkern ist ein moderner Couchtisch aus massivem Apfelbaumholz mit markanter Streifenmaserung und integrierten Ablagen, der Ordnung schafft und gleichzeitig zum Blickfang im Wohnzimmer wird.',
     imageUrl: 'gallery/tisch-2.jpg',
-    tags: ['Kirschbaum', 'Retro', 'Wohnzimmer'],
+    tags: ['Apfelbaum', 'Couchtisch', 'Ablage'],
   }
 ];
 
