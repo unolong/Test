@@ -13,12 +13,12 @@ import { Project, Testimonial, ServiceItem, ProcessStep } from './types';
 export const GALLERY_ITEMS: Project[] = [
   {
     id: '1',
-    title: 'Eiche Massivholztisch "Familienzeit"',
+    title: 'Essgruppe „Knotenpunkt“ aus Knorreiche"',
     category: 'Tische',
-    description: 'Ein robuster Esstisch aus wilder Eiche mit Baumkante, geölt für Langlebigkeit.',
-    fullDescription: 'Dieser Tisch bildet das Herzstück des Esszimmers. Gefertigt aus 300 Jahre alter Eiche, bewahrt er die Geschichte des Baumes. Die Oberfläche wurde dreifach mit Hartwachsöl behandelt.',
+    description: 'Ein robuster Esstisch aus Knorreiche mit Baumkante, geölt für Langlebigkeit.',
+    fullDescription: 'Knotenpunkt ist eine kompakte Essgruppe aus charakterstarker Knorreiche mit Tisch, Bank und Hockern – reduziert im Design, robust für den Alltag.',
     imageUrl: 'gallery/tisch-1.jpg',
-    tags: ['Eiche', 'Baumkante', 'Geölt', 'Stahlgestell'],
+    tags: ['Knorreiche', 'Baumkante', 'Geölt', 'Massivholztisch'],
   },
   {
     id: '2',
