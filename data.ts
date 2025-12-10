@@ -42,8 +42,8 @@ export const GALLERY_ITEMS: Project[] = [
     title: 'Bibliotheksregal mit Leiter',
     category: 'Schränke & Regale',
     description: 'Raumhohes Bücherregal aus weiß gekalkter Esche inklusive verschiebbarer Leiter.',
-    imageUrl: 'gallery/regal-1.jpg',
-    tags: ['Esche', 'Weißöl', 'Bibliothek'],
+    imageUrl: 'gallery/bett-2.jpg',
+    tags: ['Esche', 'Weißöl', 'Bett'],
   },
   {
     id: '5',
