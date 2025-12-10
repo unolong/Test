@@ -75,6 +75,7 @@ export const GALLERY_ITEMS: Project[] = [
     imageUrl: 'gallery/schrank-2.jpg',
     tags: ['Wohnwand', 'Eiche', 'TV- & Stauraummöbel'],
   }
+];
 export const SERVICES: ServiceItem[] = [
   {
     id: '1',
