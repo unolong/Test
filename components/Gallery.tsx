@@ -9,6 +9,7 @@ import { Category, Project } from '../types';
  */
 
 const CATEGORIES: Category[] = ['Alle', 'Tische', 'Schränke & Regale', 'Betten', 'Küchen', 'Außenbereich'];
+const MAX_EXAMPLES = 6;
 
 const Gallery: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<Category>('Alle');
@@ -18,13 +19,18 @@ const Gallery: React.FC = () => {
     (item) => activeCategory === 'Alle' || item.category === activeCategory
   );
 
+  const displayedItems =
+    activeCategory === 'Alle'
+      ? filteredItems.slice(0, MAX_EXAMPLES)
+      : filteredItems;
+
   return (
     <section id="gallery" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-4">Unsere Werkschau</h2>
           <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-            Jedes Stück ein Unikat. Entdecken Sie eine Auswahl unserer bisherigen Projekte aus Dresden und Umgebung.
+            Jedes Stück ein Unikat. Entdecken Sie eine Auswahl unserer bisherigen Projekte aus Dresden und Umgebung. In der Ansicht „Alle" zeigen wir eine Auswahl – wählen Sie eine Kategorie, um weitere Projekte zu sehen.
           </p>
         </div>
 
@@ -47,7 +53,7 @@ const Gallery: React.FC = () => {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item) => (
+          {displayedItems.map((item) => (
             <div 
               key={item.id} 
               className="group cursor-pointer flex flex-col h-full"
