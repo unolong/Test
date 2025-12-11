@@ -27,7 +27,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Betten',
     description: 'Schwebendes Hochbett aus Eiche mit naturbelassener Leiter aus Robinie und Stauraum im Bereich darunter.',
     fullDescription: 'Baumsteg ist ein massiv gebautes Hochbett aus Eiche mit skulpturaler Robinienleiter, das den Raum darunter frei nutzbar macht und echtes Baumhaus-Gefühl ins Zimmer holt.',
-    imageUrl: '/gallery/bett-1.jpg',
+    imageUrl: 'gallery/bett-1.jpg',
     tags: ['Eiche', 'Robinie', 'Hochbett'],
   },
   {
@@ -36,7 +36,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Küchen',
     description: 'U-förmige Massivholzküche aus Eiche mit breiten Arbeitsplatten und viel Stauraum.',
     fullDescription: 'Eichenwinkel ist eine maßgefertigte Einbauküche aus massiver Eiche, die warme Holzoptik, robuste Arbeitsflächen und klare Linien zu einem alltagstauglichen Küchenraum verbindet.',
-    imageUrl: '/gallery/kueche-1.jpg',
+    imageUrl: 'gallery/kueche-1.jpg',
     tags: ['Eiche', 'Massivholzküche', 'Maßanfertigung'],
   },
   {
@@ -45,7 +45,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Betten',
     description: 'Massives Doppelbett aus europäischem Kirschbaum mit markantem Kopfteil, großzügen Schubkästen unter der Liegefläche und seitlichen, schwebenden Ablagen.',
     fullDescription: 'Kirschraum ist ein großzügiges Doppelbett aus europäischem Kirschbaum, das klare Linien mit viel Stauraum in den Schubkästen und einer warmen, ruhigen Ausstrahlung verbindet.',
-    imageUrl: '/gallery/bett-2.jpg',
+    imageUrl: 'gallery/bett-2.jpg',
     tags: ['Kirschbaum', 'Massivholzbett', 'Stauraum'],
   },
   {
@@ -54,7 +54,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Außenbereich',
     description: 'Zeitlose Gartenbank aus heller Esche mit ergonomischer Sitzfläche und klaren Linien – gemacht für lange Sommerabende im Grünen..',
     fullDescription: 'Rebenblick ist eine stabile Gartenbank aus massivem Eschenholz, die mit ihrer bequemen Form und warmen Ausstrahlung jeden Garten in einen Lieblingsplatz verwandelt.',
-    imageUrl: '/gallery/garten-1.jpg',
+    imageUrl: 'gallery/garten-1.jpg',
     tags: ['Esche', 'Outdoor', 'Wetterfest'],
   },
   {
@@ -63,7 +63,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Tische',
     description: 'Kompakter Couchtisch aus lebendig gemasertem Apfelbaum mit seitlichen Fächern für Zeitungen und Bücher.',
     fullDescription: 'Apfelkern ist ein moderner Couchtisch aus massivem Apfelbaumholz mit markanter Streifenmaserung und integrierten Ablagen, der Ordnung schafft und gleichzeitig zum Blickfang im Wohnzimmer wird.',
-    imageUrl: '/gallery/tisch-2.jpg',
+    imageUrl: 'gallery/tisch-2.jpg',
     tags: ['Apfelbaum', 'Couchtisch', 'Ablage'],
   },
     {
