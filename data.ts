@@ -17,7 +17,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Tische',
     description: 'Ein robuster Esstisch aus Knorreiche mit Baumkante, geölt für Langlebigkeit.',
     fullDescription: 'Knotenpunkt ist eine kompakte Essgruppe aus charakterstarker Knorreiche mit Tisch, Bank und Hockern – reduziert im Design, robust für den Alltag.',
-    imageUrl: '/gallery/tisch-1.jpg',
+    imageUrl: 'gallery/tisch-1.jpg',
     tags: ['Knorreiche', 'Baumkante', 'Geölt', 'Massivholztisch'],
   },
   {
