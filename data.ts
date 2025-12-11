@@ -175,6 +175,6 @@ export const IMAGES = {
   // TODO: eigenes Bild: about: '/team/meister.jpg'
   materials: 'https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   // TODO: eigenes Bild: materials: '/materials/holzstruktur.jpg'
-  contact: 'https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1'
+  contact: 'gallery/maps.jpg',
   // TODO: eigenes Bild: contact: '/contact/dresden-karte.jpg'
 };
