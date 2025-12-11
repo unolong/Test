@@ -5,9 +5,10 @@ import { Project, Testimonial, ServiceItem, ProcessStep } from './types';
  * Alle Galerie-Bilder befinden sich im Ordner `gallery/` im Projekt-Root.
  * Um Bilder zu aktualisieren:
  * 1. Ersetze oder füge neue JPG-Dateien in gallery/ hinzu (z.B. gallery/tisch-1.jpg)
- * 2. Aktualisiere die imageUrl-Pfade unten (z.B. 'gallery/mein-bild.jpg')
+ * 2. Aktualisiere die imageUrl-Pfade unten (z.B. '/gallery/mein-bild.jpg')
  *
  * Die Bilder werden automatisch im Browser geladen und sind Teil des lokalen Projekts.
+ * WICHTIG: Pfade müssen mit einem führenden Slash beginnen (z.B. '/gallery/bild.jpg')
  */
 
 export const GALLERY_ITEMS: Project[] = [
@@ -17,7 +18,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Tische',
     description: 'Ein robuster Esstisch aus Knorreiche mit Baumkante, geölt für Langlebigkeit.',
     fullDescription: 'Knotenpunkt ist eine kompakte Essgruppe aus charakterstarker Knorreiche mit Tisch, Bank und Hockern – reduziert im Design, robust für den Alltag.',
-    imageUrl: 'gallery/tisch-1.jpg',
+    imageUrl: '/gallery/tisch-1.jpg',
     tags: ['Knorreiche', 'Baumkante', 'Geölt', 'Massivholztisch'],
   },
   {
@@ -26,7 +27,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Betten',
     description: 'Schwebendes Hochbett aus Eiche mit naturbelassener Leiter aus Robinie und Stauraum im Bereich darunter.',
     fullDescription: 'Baumsteg ist ein massiv gebautes Hochbett aus Eiche mit skulpturaler Robinienleiter, das den Raum darunter frei nutzbar macht und echtes Baumhaus-Gefühl ins Zimmer holt.',
-    imageUrl: 'gallery/bett-1.jpg',
+    imageUrl: '/gallery/bett-1.jpg',
     tags: ['Eiche', 'Robinie', 'Hochbett'],
   },
   {
@@ -35,7 +36,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Küchen',
     description: 'U-förmige Massivholzküche aus Eiche mit breiten Arbeitsplatten und viel Stauraum.',
     fullDescription: 'Eichenwinkel ist eine maßgefertigte Einbauküche aus massiver Eiche, die warme Holzoptik, robuste Arbeitsflächen und klare Linien zu einem alltagstauglichen Küchenraum verbindet.',
-    imageUrl: 'gallery/kueche-1.jpg',
+    imageUrl: '/gallery/kueche-1.jpg',
     tags: ['Eiche', 'Massivholzküche', 'Maßanfertigung'],
   },
   {
@@ -44,7 +45,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Betten',
     description: 'Massives Doppelbett aus europäischem Kirschbaum mit markantem Kopfteil, großzügen Schubkästen unter der Liegefläche und seitlichen, schwebenden Ablagen.',
     fullDescription: 'Kirschraum ist ein großzügiges Doppelbett aus europäischem Kirschbaum, das klare Linien mit viel Stauraum in den Schubkästen und einer warmen, ruhigen Ausstrahlung verbindet.',
-    imageUrl: 'gallery/bett-2.jpg',
+    imageUrl: '/gallery/bett-2.jpg',
     tags: ['Kirschbaum', 'Massivholzbett', 'Stauraum'],
   },
   {
@@ -53,7 +54,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Außenbereich',
     description: 'Zeitlose Gartenbank aus heller Esche mit ergonomischer Sitzfläche und klaren Linien – gemacht für lange Sommerabende im Grünen..',
     fullDescription: 'Rebenblick ist eine stabile Gartenbank aus massivem Eschenholz, die mit ihrer bequemen Form und warmen Ausstrahlung jeden Garten in einen Lieblingsplatz verwandelt.',
-    imageUrl: 'gallery/garten-1.jpg',
+    imageUrl: '/gallery/garten-1.jpg',
     tags: ['Esche', 'Outdoor', 'Wetterfest'],
   },
   {
@@ -62,7 +63,7 @@ export const GALLERY_ITEMS: Project[] = [
     category: 'Tische',
     description: 'Kompakter Couchtisch aus lebendig gemasertem Apfelbaum mit seitlichen Fächern für Zeitungen und Bücher.',
     fullDescription: 'Apfelkern ist ein moderner Couchtisch aus massivem Apfelbaumholz mit markanter Streifenmaserung und integrierten Ablagen, der Ordnung schafft und gleichzeitig zum Blickfang im Wohnzimmer wird.',
-    imageUrl: 'gallery/tisch-2.jpg',
+    imageUrl: '/gallery/tisch-2.jpg',
     tags: ['Apfelbaum', 'Couchtisch', 'Ablage'],
   }
 ];
@@ -160,7 +161,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const IMAGES = {
   hero: 'https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1',
   // TODO: eigenes Bild: hero: '/hero/werkstatt-bg.jpg'
-  about: 'gallery/till.jpg',
+  about: '/gallery/till.jpg',
   // TODO: eigenes Bild: about: '/team/meister.jpg'
   materials: 'https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
   // TODO: eigenes Bild: materials: '/materials/holzstruktur.jpg'
