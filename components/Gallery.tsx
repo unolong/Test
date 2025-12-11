@@ -126,3 +126,60 @@ const Gallery: React.FC = () => {
             <div className="grid md:grid-cols-2">
               <div className="h-64 md:h-auto bg-stone-200">
                 <img
+                  src={selectedProject.imageUrl}
+                  alt={selectedProject.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="p-8 md:p-10 flex flex-col">
+                <span className="text-wood-600 font-semibold uppercase tracking-wider text-sm mb-2">
+                  {selectedProject.category}
+                </span>
+
+                <h3 className="text-3xl font-serif font-bold text-stone-900 mb-4">
+                  {selectedProject.title}
+                </h3>
+
+                <div className="prose prose-stone mb-6 text-stone-600">
+                  <p>
+                    {selectedProject.fullDescription ||
+                      selectedProject.description}
+                  </p>
+                </div>
+
+                <div className="mt-auto pt-6 border-t border-stone-100">
+                  <h4 className="text-sm font-bold text-stone-900 mb-3">
+                    Details & Materialien:
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {selectedProject.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 bg-wood-50 text-wood-800 rounded-full text-sm font-medium border border-wood-100"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <a
+                    href="#contact"
+                    onClick={() => setSelectedProject(null)}
+                    className="block w-full text-center px-6 py-3 bg-stone-900 text-white font-medium rounded-lg hover:bg-wood-600 transition-colors"
+                  >
+                    Ähnliches Projekt anfragen
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+};
+
+export default Gallery;
