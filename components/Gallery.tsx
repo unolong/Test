@@ -4,8 +4,10 @@ import { GALLERY_ITEMS } from '../data';
 import { Category, Project } from '../types';
 
 /**
- * Bilder werden aus dem gallery/-Ordner geladen.
- * Pfade werden von data.ts bereitgestellt (relative Pfade, z.B. 'gallery/tisch-1.jpg')
+ * Bilder werden aus dem public/gallery/-Ordner geladen.
+ * Pfade kommen aus data.ts, z.B. 'gallery/tisch-1.jpg'.
+ * Durch import.meta.env.BASE_URL funktionieren die Pfade auch auf GitHub Pages
+ * (z.B. /Test/gallery/tisch-1.jpg).
  */
 
 const CATEGORIES: Category[] = ['Alle', 'Tische', 'Schränke & Regale', 'Betten', 'Küchen', 'Außenbereich'];
@@ -28,7 +30,9 @@ const Gallery: React.FC = () => {
     <section id="gallery" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-4">Unsere Werkschau</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-4">
+            Unsere Werkschau
+          </h2>
           <p className="text-lg text-stone-600 max-w-2xl mx-auto">
             Jedes Stück ein Unikat. Entdecken Sie eine Auswahl unserer bisherigen Projekte aus Dresden und Umgebung. In der Ansicht „Alle" zeigen wir eine Auswahl – wählen Sie eine Kategorie, um weitere Projekte zu sehen.
           </p>
@@ -54,14 +58,14 @@ const Gallery: React.FC = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayedItems.map((item) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className="group cursor-pointer flex flex-col h-full"
               onClick={() => setSelectedProject(item)}
             >
               <div className="relative overflow-hidden rounded-xl shadow-sm aspect-[4/3] bg-stone-200">
                 <img
-                  src={item.imageUrl}
+                  src={`${import.meta.env.BASE_URL}${item.imageUrl}`}
                   alt={item.title}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
                   loading="lazy"
@@ -79,7 +83,7 @@ const Gallery: React.FC = () => {
                   {item.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-auto">
-                  {item.tags.map(tag => (
+                  {item.tags.map((tag) => (
                     <span key={tag} className="text-xs bg-stone-100 text-stone-500 px-2 py-1 rounded">
                       {tag}
                     </span>
@@ -102,11 +106,11 @@ const Gallery: React.FC = () => {
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <div className="grid md:grid-cols-2">
               <div className="h-64 md:h-auto bg-stone-200">
                 <img
-                  src={selectedProject.imageUrl}
+                  src={`${import.meta.env.BASE_URL}${selectedProject.imageUrl}`}
                   alt={selectedProject.title}
                   className="w-full h-full object-cover"
                 />
@@ -121,12 +125,15 @@ const Gallery: React.FC = () => {
                 <div className="prose prose-stone mb-6 text-stone-600">
                   <p>{selectedProject.fullDescription || selectedProject.description}</p>
                 </div>
-                
+
                 <div className="mt-auto pt-6 border-t border-stone-100">
                   <h4 className="text-sm font-bold text-stone-900 mb-3">Details & Materialien:</h4>
                   <div className="flex flex-wrap gap-2">
-                    {selectedProject.tags.map(tag => (
-                      <span key={tag} className="px-3 py-1 bg-wood-50 text-wood-800 rounded-full text-sm font-medium border border-wood-100">
+                    {selectedProject.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 bg-wood-50 text-wood-800 rounded-full text-sm font-medium border border-wood-100"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -134,8 +141,8 @@ const Gallery: React.FC = () => {
                 </div>
 
                 <div className="mt-8">
-                  <a 
-                    href="#contact" 
+                  <a
+                    href="#contact"
                     onClick={() => setSelectedProject(null)}
                     className="block w-full text-center px-6 py-3 bg-stone-900 text-white font-medium rounded-lg hover:bg-wood-600 transition-colors"
                   >
